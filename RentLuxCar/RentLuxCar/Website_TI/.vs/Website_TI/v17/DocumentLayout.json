@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\daniel\\source\\repos\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\contactenos\\contactenos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\contactenos\\contactenos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\daniel\\source\\repos\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\daniel\\source\\repos\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\wwwroot\\carros.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:wwwroot\\carros.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\daniel\\source\\repos\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\wwwroot\\contactenos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:wwwroot\\contactenos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\daniel\\source\\repos\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "wwwroot\\login.html",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\login.html",
+              "RelativeToolTip": "wwwroot\\login.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-12T14:49:04.83Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "carros.html",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\carros.html",
+              "RelativeDocumentMoniker": "wwwroot\\carros.html",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\carros.html",
+              "RelativeToolTip": "wwwroot\\carros.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-12T14:52:42.118Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "contactenos.html",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\contactenos.html",
+              "RelativeDocumentMoniker": "wwwroot\\contactenos.html",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\contactenos.html",
+              "RelativeToolTip": "wwwroot\\contactenos.html",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-12T14:52:48.421Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-12T14:52:57.237Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "contactenos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Contactenos\\contactenos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Contactenos\\contactenos.cshtml",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\RentLuxCar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Contactenos\\contactenos.cshtml",
+              "RelativeToolTip": "Views\\Contactenos\\contactenos.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:54:50.238Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
