@@ -1,0 +1,231 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-contact{
+   
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    inline-size: auto;
+}
+
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+.hero {
+    background: url('luxury-car.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s;
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideInLeft 1.5s;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: slideInRight 1.5s;
+}
+
+.hero .btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    animation: bounceIn 2s;
+}
+
+.hero .btn:hover {
+    background: #e55b50;
+}
+
+.about, .services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about .container, .services .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+}
+
+.services .card i {
+    font-size: 2em;
+    color: #ff6f61;
+}
+
+.services .card h3 {
+    margin: 15px 0;
+}
+
+.form-section {
+    padding: 50px 0;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 2s;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e55b50;
+}
+
+footer {
+    background: #0f2027;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);[[_{{{CITATION{{{_1{](https://github.com/MuhammadHananAsghar/BirdFly---Chat-App-in-PHP/tree/1cf809e8141465c41fb8e04ba53de93ac6d2e5fa/BirdFly%2Fheader.php)[_{{{CITATION{{{_2{](https://github.com/itsabhijeetid/sms/tree/1f8d8871e6345c7b5686ab7a19e9abcbc216a23d/sms%2Flogin.php)[_{{{CITATION{{{_3{](https://github.com/DaleCooper59/CI_Jarditou/tree/5e513c01de527e8abe9af8b58bf944e4b3d87137/application%2Fviews%2FconnexionClient_view.php)_{{{CITATION{{{_4{](https://github.com/CarlNierves/CarlNierves.github.io/tree/faf325f68517f148ef66653d9dbd3488d7e85b91/index.php)
