@@ -1,0 +1,11 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/2554cbd4-0781-4464-9266-acd6c8113c63.vsidx
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/262cd630-507d-4fd6-bea8-2f74010e034f.vsidx
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/4f61e1d5-3b95-485f-aaf0-2db042c96ea8.vsidx
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/69cbe859-a42e-4299-af8b-38bac3eea1e4.vsidx
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/8ae6711d-fae4-4089-9c8d-5abc746affdb.vsidx
+/RentLuxCar/RentLuxCar/Website_TI/.vs/Website_TI/FileContentIndex/c8d3c16d-2962-4968-8f2a-6f623e2582fc.vsidx
+*.vsidx
