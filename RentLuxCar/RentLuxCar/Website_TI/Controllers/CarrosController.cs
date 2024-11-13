@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Website_TI.Models;
 
 namespace Website_TI.Controllers
 {
