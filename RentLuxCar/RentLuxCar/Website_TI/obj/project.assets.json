@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\Documents\\GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Website_TI.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Website_TI.csproj",
       "projectName": "Website_TI",
-      "projectPath": "C:\\Users\\tiago\\Documents\\GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Website_TI.csproj",
+      "projectPath": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Website_TI.csproj",
       "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\Documents\\GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\obj\\",
+      "outputPath": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
