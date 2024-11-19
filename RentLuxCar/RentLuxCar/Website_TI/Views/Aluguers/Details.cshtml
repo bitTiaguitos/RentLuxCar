@@ -1,0 +1,54 @@
+﻿@model Website_TI.Models.DTO.Aluguer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Aluguer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CarroAlugado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CarroAlugado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataDeAluguer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataDeAluguer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InicioAluguer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InicioAluguer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FimAluguer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FimAluguer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EntregaViaturaAluguer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EntregaViaturaAluguer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdCliente)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
