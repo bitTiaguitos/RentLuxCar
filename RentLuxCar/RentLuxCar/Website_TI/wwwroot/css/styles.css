@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -17,16 +18,17 @@ header {
 .container {
     width: 80%;
     margin: 0 auto;
+    justify-content: center; /* Centraliza horizontalmente */ 
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
 }
 
 .container-contact{
-   
     padding: 50px;
     text-align: center;
     margin-bottom: 50px;
     inline-size: auto;
 }
-
 
 .logo img {
     height: 60px;
@@ -56,7 +58,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('luxury-car.jpg') no-repeat center center/cover;
+    background: url('Imagens/11.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 0;
@@ -65,8 +67,9 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     animation: fadeIn 2s;
+    font-size: large;
+    font-style: bold;
 }
-
 
 .hero h1 {
     font-size: 3em;
@@ -191,6 +194,65 @@ footer {
     width: 100%;
 }
 
+/* Estilos adicionais */
+.car-list {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.car-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: calc(33% - 40px);
+    transition: transform 0.2s;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+}
+
+.car-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-info h2 {
+    margin: 10px 0;
+}
+
+.car-info p {
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -228,4 +290,7 @@ footer {
         opacity: 0;
     }
     to {
-        transform: scale(1);[[_{{{CITATION{{{_1{](https://github.com/MuhammadHananAsghar/BirdFly---Chat-App-in-PHP/tree/1cf809e8141465c41fb8e04ba53de93ac6d2e5fa/BirdFly%2Fheader.php)[_{{{CITATION{{{_2{](https://github.com/itsabhijeetid/sms/tree/1f8d8871e6345c7b5686ab7a19e9abcbc216a23d/sms%2Flogin.php)[_{{{CITATION{{{_3{](https://github.com/DaleCooper59/CI_Jarditou/tree/5e513c01de527e8abe9af8b58bf944e4b3d87137/application%2Fviews%2FconnexionClient_view.php)_{{{CITATION{{{_4{](https://github.com/CarlNierves/CarlNierves.github.io/tree/faf325f68517f148ef66653d9dbd3488d7e85b91/index.php)
+        transform: scale(1);
+        opacity: 1;
+    }
+}
