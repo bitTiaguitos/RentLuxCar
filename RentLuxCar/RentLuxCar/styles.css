@@ -23,6 +23,70 @@ header {
     text-align: center;
 }
 
+.register-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rent_detail   {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    image-resolution: 20px,20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.register-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.register-form button:hover {
+    background: #e55b50;
+}
+
+
 .container-contact{
     padding: 50px;
     text-align: center;
@@ -194,7 +258,7 @@ footer {
     width: 100%;
 }
 
-/* Estilos adicionais */
+
 .car-list {
     padding: 20px;
     background-color: #f8f8f8;
@@ -294,3 +358,14 @@ footer {
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
