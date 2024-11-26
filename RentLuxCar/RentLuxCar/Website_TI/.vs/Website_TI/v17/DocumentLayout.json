@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\services\\interfaceclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:services\\interfaceclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\services\\aluguerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:services\\aluguerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\services\\interfacealuguerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:services\\interfacealuguerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -62,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +94,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AluguerService.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\AluguerService.cs",
+              "RelativeDocumentMoniker": "Services\\AluguerService.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\AluguerService.cs",
+              "RelativeToolTip": "Services\\AluguerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:46:34.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InterfaceAluguerService.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\InterfaceAluguerService.cs",
+              "RelativeDocumentMoniker": "Services\\InterfaceAluguerService.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\InterfaceAluguerService.cs",
+              "RelativeToolTip": "Services\\InterfaceAluguerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:46:20.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\ClienteService.cs",
+              "RelativeToolTip": "Services\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:45:56.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterfaceClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\InterfaceClienteService.cs",
+              "RelativeDocumentMoniker": "Services\\InterfaceClienteService.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\InterfaceClienteService.cs",
+              "RelativeToolTip": "Services\\InterfaceClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:45:30.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T14:38:46.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Clientes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Clientes\\Index.cshtml",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Clientes\\Index.cshtml",
               "RelativeToolTip": "Views\\Clientes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T14:55:09.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Clientes\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Clientes\\Create.cshtml",
@@ -95,12 +180,11 @@
               "RelativeToolTip": "Views\\Clientes\\Create.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T14:54:56.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:54:56.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MetodoPagamentosIndexViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosIndexViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosIndexViewModel.cs",
@@ -108,12 +192,11 @@
               "RelativeToolTip": "Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosIndexViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:54:10.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:54:10.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "MetodoPagamentosCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosCreateViewModel.cs",
@@ -121,12 +204,11 @@
               "RelativeToolTip": "Models\\ViewModel\\MetodoPagamentosViewModel\\MetodoPagamentosCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:53:52.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:53:52.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "PagamentosIndexViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\PagamentosViewModel\\PagamentosIndexViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\PagamentosViewModel\\PagamentosIndexViewModel.cs",
@@ -134,12 +216,11 @@
               "RelativeToolTip": "Models\\ViewModel\\PagamentosViewModel\\PagamentosIndexViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:53:25.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:53:25.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "PagamentosCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\PagamentosViewModel\\PagamentosCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\PagamentosViewModel\\PagamentosCreateViewModel.cs",
@@ -147,12 +228,11 @@
               "RelativeToolTip": "Models\\ViewModel\\PagamentosViewModel\\PagamentosCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:53:10.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:53:10.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "AluguerIndexViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\AluguerViewModel\\AluguerIndexViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\AluguerViewModel\\AluguerIndexViewModel.cs",
@@ -160,12 +240,11 @@
               "RelativeToolTip": "Models\\ViewModel\\AluguerViewModel\\AluguerIndexViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:52:50.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:52:50.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AluguerEditViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\AluguerViewModel\\AluguerEditViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\AluguerViewModel\\AluguerEditViewModel.cs",
@@ -173,12 +252,11 @@
               "RelativeToolTip": "Models\\ViewModel\\AluguerViewModel\\AluguerEditViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:52:37.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:52:37.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "AluguerCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\AluguerViewModel\\AluguerCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\AluguerViewModel\\AluguerCreateViewModel.cs",
@@ -186,12 +264,11 @@
               "RelativeToolTip": "Models\\ViewModel\\AluguerViewModel\\AluguerCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:52:22.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:52:22.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "TiposDeViaturaIndexViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturaIndexViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturaIndexViewModel.cs",
@@ -199,12 +276,11 @@
               "RelativeToolTip": "Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturaIndexViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:51:48.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:51:48.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "TiposDeViaturasCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturasCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturasCreateViewModel.cs",
@@ -212,12 +288,11 @@
               "RelativeToolTip": "Models\\ViewModel\\TiposDeViaturasViewModel\\TiposDeViaturasCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:51:35.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:51:35.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ViaturasIndexViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
@@ -225,12 +300,11 @@
               "RelativeToolTip": "Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:40:57.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:40:57.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "ViaturasCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
@@ -238,8 +312,7 @@
               "RelativeToolTip": "Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:40:47.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:40:47.848Z"
             }
           ]
         }
