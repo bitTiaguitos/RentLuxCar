@@ -41,6 +41,22 @@
       "PackagePath": "staticwebassets\\Content\\Imagens\\slide-3.jpg"
     },
     {
+      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_carros.html",
+      "PackagePath": "staticwebassets\\admin_carros.html"
+    },
+    {
+      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_contactenos.html",
+      "PackagePath": "staticwebassets\\admin_contactenos.html"
+    },
+    {
+      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_index.html",
+      "PackagePath": "staticwebassets\\admin_index.html"
+    },
+    {
+      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_login.html",
+      "PackagePath": "staticwebassets\\admin_login.html"
+    },
+    {
       "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\carros.html",
       "PackagePath": "staticwebassets\\carros.html"
     },

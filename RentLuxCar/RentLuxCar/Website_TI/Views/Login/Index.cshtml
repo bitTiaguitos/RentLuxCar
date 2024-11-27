@@ -19,24 +19,17 @@
     </header>
 
     <main>
-        <section class="car-list">
+        <section class="login-section">
             <div class="container">
-                <h1>Nossos Carros</h1>
-                <div class="car-card">
-                    <img src="car1.jpg" alt="Carro 1">
-                    <h2>Carro Luxo 1</h2>
-                    <p>Descrição do Carro Luxo 1.</p>
-                </div>
-                <div class="car-card">
-                    <img src="car2.jpg" alt="Carro 2">
-                    <h2>Carro Luxo 2</h2>
-                    <p>Descrição do Carro Luxo 2.</p>
-                </div>
-                <div class="car-card">
-                    <img src="car3.jpg" alt="Carro 3">
-                    <h2>Carro Luxo 3</h2>
-                    <p>Descrição do Carro Luxo 3.</p>
-                </div>
+                <h1>Iniciar Sessão</h1>
+                <form action="login_process.php" method="post">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Ainda não tem uma conta? <a href="register.html">Registre-se aqui</a>.</p>
             </div>
         </section>
     </main>
