@@ -41,30 +41,6 @@
       "PackagePath": "staticwebassets\\Content\\Imagens\\slide-3.jpg"
     },
     {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_carros.html",
-      "PackagePath": "staticwebassets\\admin_carros.html"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_contactenos.html",
-      "PackagePath": "staticwebassets\\admin_contactenos.html"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_index.html",
-      "PackagePath": "staticwebassets\\admin_index.html"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\admin_login.html",
-      "PackagePath": "staticwebassets\\admin_login.html"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\carros.html",
-      "PackagePath": "staticwebassets\\carros.html"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\contactenos.html",
-      "PackagePath": "staticwebassets\\contactenos.html"
-    },
-    {
       "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -75,10 +51,6 @@
     {
       "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\js\\site.js",
@@ -311,10 +283,6 @@
     {
       "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\wwwroot\\login.html",
-      "PackagePath": "staticwebassets\\login.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Website_TI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -2,22 +2,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h2 style="text-align:left;">RentLuxCar</h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contactenos.html">Contactenos</a></li>
-                    <li><a href="carros.html">Carros</a></li>
-                    <li><a href="login.html"><i class="fas fa-user"></i> Iniciar Sessão</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <main>
         <section class="login-section">
             <div class="container">
@@ -29,7 +13,7 @@
                     <input type="password" id="password" name="password" required>
                     <button type="submit">Entrar</button>
                 </form>
-                <p>Ainda não tem uma conta? <a href="register.html">Registre-se aqui</a>.</p>
+                <p>Ainda não tem uma conta? <a href="@Url.Action("Index", "Clientes")">Registre-se aqui</a>.</p>
             </div>
         </section>
     </main>
