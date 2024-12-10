@@ -193,11 +193,27 @@ namespace Website_TI.Migrations
                     b.Property<int>("Ano")
                         .HasColumnType("int");
 
+                    b.Property<string>("DirImagem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Motor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Peso")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Potencia")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -210,6 +226,18 @@ namespace Website_TI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoAluguer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Transmissao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Vmax")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("aceleracao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

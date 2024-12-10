@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentLuxCar - Personalizar Aluguer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2 style="text-align:left;">RentLuxCar</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                    <li><a href="carros.html">Carros</a></li>
+                    <li><a href="login.html"><i class="fas fa-user"></i> Iniciar Sessão</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <table id="rent_detail">
+        <tr> 
+            <th><h2><a href="carros.html" class="btn"> Voltar aos Carros</a></h2></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <main>
+                    <section class="customize-section">
+                        <div class="container">
+                            <form class="customize-form" action="" method="post">
+                                <label for="pickupLocation">Morada de Levantamento:</label>
+                                <input type="text" id="pickupLocation" name="pickupLocation" required>
+                
+                                <label for="rentalType">Tipo de Aluguer:</label>
+                                <select id="rentalType" name="rentalType" required>
+                                    <option value="diario">Diário</option>
+                                    <option value="hora">Por Hora</option>
+                                </select>
+                
+                                <label for="startDate">Data de Início:</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                
+                                <label for="endDate">Data de Fim:</label>
+                                <input type="date" id="endDate" name="endDate" required>
+                
+                                <button type="submit">Confirmar Aluguer</button>
+                            </form>
+                        </div>
+                    </section>
+                </main>
+            </td>
+        
+            <td><img  style="width:800px;height:450px;" src="Imagens/ferrari_f40.jpg" alt="Carro 2"></td>
+
+            <td>
+                <div class="car-info">
+                    <h2>Carro Luxo 2</h2>
+                    <p>Motor: 2.9 L (179.2 cu in) twin-turbocharged V8</p>
+                    <p>Potência: 471 HP (478 PS; 352 kW)</p>
+                    <p>Transmissão: 5-speed manual</p>
+                    <p>Velocidade máxima: 324 km/h (201 mph)</p>
+                    <p>0-100 km/h: 4.1 segundos</p>
+                    <p>Peso: 1,254 kg (2,765 lb)</p>
+                </div>
+            </td>
+        </tr> 
+    </table>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RentLuxCar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

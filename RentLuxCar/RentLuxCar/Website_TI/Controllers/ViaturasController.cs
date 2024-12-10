@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Website_TI.Data;
 using Website_TI.Models.DTO;
+using Website_TI.Models.ViewModel;
+using Website_TI.Models.ViewModel.ViaturasViewModel;
 
 namespace Website_TI.Controllers
 {
@@ -17,6 +19,49 @@ namespace Website_TI.Controllers
         public ViaturasController(Website_TIContext context)
         {
             _context = context;
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(ViaturasCreateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var viatura = new Viaturas
+                {
+                    DirImagem = SaveImageFile(model.ImageFile), // Save file and store path
+                    Marca = model.Marca,
+                    Modelo = model.Modelo,
+                    Motor = model.Motor,
+                    Potencia = model.Potencia,
+                    Transmissao = model.Transmissao,
+                    Peso = model.Peso,
+                    Vmax = model.Vmax, 
+                    aceleracao = model.aceleracao,
+
+
+                };
+
+                _context.Viaturas.Add(viatura);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
+        }
+
+        private string SaveImageFile(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return null;
+
+            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+            var filePath = Path.Combine(uploadPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+
+            return "/images/" + fileName; // Return the relative path to store in the database
         }
 
         // GET: Viaturas
