@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210151810_databasecampo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241210151810_databasecampo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\controllers\\viaturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:controllers\\viaturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\viaturas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\viaturas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\models\\viewmodel\\viaturasviewmodel\\viaturascreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:models\\viewmodel\\viaturasviewmodel\\viaturascreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\models\\viewmodel\\viaturasviewmodel\\viaturasindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:models\\viewmodel\\viaturasviewmodel\\viaturasindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\models\\dto\\viaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:models\\dto\\viaturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210153743_colunasextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241210153743_colunasextra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\controllers\\viaturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:controllers\\viaturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\viaturas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Viaturas\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Viaturas\\Create.cshtml",
@@ -49,14 +57,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241210151810_databasecampo.cs",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210151810_databasecampo.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241210151810_databasecampo.cs",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210151810_databasecampo.cs",
-              "RelativeToolTip": "Migrations\\20241210151810_databasecampo.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwD8AAAAWAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Viaturas\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Viaturas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Viaturas\\Index.cshtml",
+              "RelativeToolTip": "Views\\Viaturas\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T15:46:18.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViaturasIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModel\\ViaturasViewModel\\ViaturasIndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T15:18:10.753Z",
+              "WhenOpened": "2024-12-10T15:46:06.276Z",
               "EditorCaption": ""
             },
             {
@@ -69,26 +90,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "20241210153743_colunasextra.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210153743_colunasextra.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241210153743_colunasextra.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241210153743_colunasextra.cs",
+              "RelativeToolTip": "Migrations\\20241210153743_colunasextra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:37:44.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ViaturasCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
               "RelativeToolTip": "Models\\ViewModel\\ViaturasViewModel\\ViaturasCreateViewModel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowAEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvwEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T14:44:00.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ViaturasController.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Controllers\\ViaturasController.cs",
               "RelativeDocumentMoniker": "Controllers\\ViaturasController.cs",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Controllers\\ViaturasController.cs",
               "RelativeToolTip": "Controllers\\ViaturasController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T14:44:14.632Z",
               "EditorCaption": ""
@@ -101,7 +135,7 @@
               "RelativeDocumentMoniker": "Models\\DTO\\Viaturas.cs",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\DTO\\Viaturas.cs",
               "RelativeToolTip": "Models\\DTO\\Viaturas.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA2wBEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T14:37:22.508Z",
               "EditorCaption": ""

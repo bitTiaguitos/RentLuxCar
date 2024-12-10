@@ -12,8 +12,8 @@ using Website_TI.Data;
 namespace Website_TI.Migrations
 {
     [DbContext(typeof(Website_TIContext))]
-    [Migration("20241210143307_DirImagem")]
-    partial class DirImagem
+    [Migration("20241210153743_colunasextra")]
+    partial class colunasextra
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -208,6 +208,18 @@ namespace Website_TI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Motor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Peso")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Potencia")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("PrecoHora")
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
@@ -217,6 +229,18 @@ namespace Website_TI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoAluguer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Transmissao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Vmax")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("aceleracao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
