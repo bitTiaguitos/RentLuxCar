@@ -1,14 +1,14 @@
 ﻿<body>
     <main>
-        <section class="car-list container">
-            <h1 class="text-center my-4">Nossos Carros</h1>
-            <div class="row">
-                @foreach (var viatura in Model)
-                {
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
+        <section class="car-list">
+            <div class="car-list-container">
+                <h1 class="text-center my-4">Nossos Carros</h1>
+                <div class="car-cards-container">
+                    @foreach (var viatura in Model)
+                    {
+                        <div class="card">
                             <img src="@viatura.DirImagem" alt="@viatura.Marca @viatura.Modelo">
-                            <div class="card-body">
+                            <div class="car-info">
                                 <h5 class="card-title">@viatura.Marca @viatura.Modelo</h5>
                                 <p class="card-text">
                                     <strong>Motor:</strong> @viatura.Motor <br />
@@ -21,8 +21,8 @@
                                 <a href="#" class="btn btn-primary">Saiba Mais</a>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             </div>
         </section>
     </main>

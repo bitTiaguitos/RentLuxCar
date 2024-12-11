@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #fff;
@@ -14,21 +15,16 @@ header {
     top: 0;
     z-index: 1000;
 }
+header-container {
+ 
+}
+footer-container {
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center; /* Centraliza horizontalmente */ 
-    align-items: center; /* Centraliza verticalmente */
-    text-align: center;
+}
+main-container {
+
 }
 
-.container-contact{
-    padding: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-    inline-size: auto;
-}
 
 .logo img {
     height: 60px;
@@ -42,21 +38,22 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
+    nav ul li {
+        margin-left: 20px;
+    }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-nav ul li a:hover {
-    color: #ff6f61;
-}
+            nav ul li a:hover {
+                color: #ff6f61;
+            }
 
+/* Hero Section */
 .hero {
     background: url('Imagens/11.jpg') no-repeat center center/cover;
     color: #fff;
@@ -66,78 +63,150 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 2s;
     font-size: large;
     font-style: bold;
+    animation: fadeIn 2s;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    animation: slideInLeft 1.5s;
-}
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: slideInLeft 1.5s;
+    }
 
-.hero p {
-    font-size: 1.5em;
-    margin: 20px 0;
-    animation: slideInRight 1.5s;
-}
+    .hero p {
+        font-size: 1.5em;
+        margin: 20px 0;
+        animation: slideInRight 1.5s;
+    }
 
-.hero .btn {
-    background: #ff6f61;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    animation: bounceIn 2s;
-}
+    .hero .btn {
+        background: #ff6f61;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        animation: bounceIn 2s;
+    }
 
-.hero .btn:hover {
-    background: #e55b50;
-}
+        .hero .btn:hover {
+            background: #e55b50;
+        }
 
+/* About and Services Sections */
 .about, .services {
     padding: 50px 0;
     text-align: center;
 }
 
-.about .container, .services .container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+    .about .container, .services .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
-.services .service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    .services .service-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
-.services .card {
-    background: #fff;
+    .services .card {
+        background: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        min-width: 250px;
+        transition: transform 0.3s ease;
+    }
+
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .services .card i {
+            font-size: 2em;
+            color: #ff6f61;
+        }
+
+        .services .card h3 {
+            margin: 15px 0;
+        }
+
+/* Car Listing Section */
+.car-list {
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 250px;
-    transition: transform 0.3s ease;
+    background-color: #f8f8f8;
 }
 
-.services .card:hover {
-    transform: translateY(-10px);
+.car-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    max-width: 1200px; /* Container width */
+    margin: 0 auto;
+    box-sizing: border-box; /* Padding included in width/height */
 }
 
-.services .card i {
-    font-size: 2em;
-    color: #ff6f61;
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
-.services .card h3 {
-    margin: 15px 0;
+    .car-card img {
+        width: 100%;
+        height: 200px; /* Consistent height */
+        object-fit: cover; /* Prevent distortion */
+    }
+
+    .car-card:hover {
+        transform: scale(1.05); /* Zoom effect */
+    }
+
+.car-info {
+    padding: 20px;
+    text-align: center;
 }
 
+    .car-info h2 {
+        margin: 10px 0;
+    }
+
+    .car-info p {
+        color: #777;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+/* Contact Section */
+.container-contact {
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Form Section */
 .form-section {
     padding: 50px 0;
     background: #f9f9f9;
@@ -152,39 +221,39 @@ form {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    animation: fadeIn 2s;
 }
 
-form label {
-    display: block;
-    margin: 15px 0 5px;
-}
+    form label {
+        display: block;
+        margin: 15px 0 5px;
+    }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
-form button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background: #ff6f61;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s ease;
-}
+    form button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background: #ff6f61;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background 0.3s ease;
+    }
 
-form button:hover {
-    background: #e55b50;
-}
+        form button:hover {
+            background: #e55b50;
+        }
 
+/* Footer Section */
 footer {
     background: #0f2027;
     color: #fff;
@@ -194,69 +263,12 @@ footer {
     width: 100%;
 }
 
-/* Estilos adicionais */
-.car-list {
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-.car-cards-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.car-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin: 20px;
-    width: calc(33% - 40px);
-    transition: transform 0.2s;
-}
-
-.car-card:hover {
-    transform: scale(1.05);
-}
-
-.car-card img {
-    width: 100%;
-    height: auto;
-}
-
-.car-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.car-info h2 {
-    margin: 10px 0;
-}
-
-.car-info p {
-    color: #777;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -267,6 +279,7 @@ footer {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -278,6 +291,7 @@ footer {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -289,8 +303,22 @@ footer {
         transform: scale(0);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .car-cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .car-cards-container {
+        grid-template-columns: 1fr; /* 1 card per row */
     }
 }
