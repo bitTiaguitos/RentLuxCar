@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Website_TI.Data;
 using Website_TI.Models.DTO;
+using Website_TI.Models.ViewModel;
 
 namespace Website_TI.Controllers
 {
@@ -43,6 +44,41 @@ namespace Website_TI.Controllers
             return View(cliente);
         }
 
+        // ---------------------------- REGISTER FUNCTIONALITY ----------------------------
+
+        // GET: Clientes/Register
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        // POST: Clientes/Register
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(ClienteCreateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var cliente = new Cliente
+                {
+                    Nome = model.NomeCompleto,
+                    Genero = model.Genero,
+                    Telemovel = model.Telemovel,
+                    Senha = model.Senha, // Store as plaintext for now (hash later!)
+                    Idade = model.Idade,
+                    DataDeCriacao = DateTime.Now
+                };
+
+                _context.Add(cliente);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index)); // Redirect to a success or login page
+            }
+
+            return View(model);
+        }
+
+        // -------------------------------------------------------------------------------
+
         // GET: Clientes/Create
         public IActionResult Create()
         {
@@ -50,8 +86,6 @@ namespace Website_TI.Controllers
         }
 
         // POST: Clientes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Genero,Telemovel,Idade,DataDeCriacao")] Cliente cliente)
@@ -82,8 +116,6 @@ namespace Website_TI.Controllers
         }
 
         // POST: Clientes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Genero,Telemovel,Idade,DataDeCriacao")] Cliente cliente)

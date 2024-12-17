@@ -5,56 +5,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<body>
+    <main>
+        <h1 style="text-align: center;">Registre-se</h1>
+        <h2><p style="text-align: center;">Já tem uma conta? <a href="login.html">Inicie sessão aqui</a>.</p></h2>
+        <section class="register-section">
+            <div class="container">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telemovel)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Idade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataDeCriacao)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telemovel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Idade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataDeCriacao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                <form style="text-align:center;" class="register-form" action="" method="post">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="gender">Gênero:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+
+                    <label for="phone">Telemóvel:</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <button type="submit">Registrar</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>
