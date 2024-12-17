@@ -5,7 +5,7 @@ public class ClienteCreateViewModel
 {
     [Required]
     [Display(Name = "Nome Completo")]
-    public string NomeCompleto { get; set; }
+    public string Nome { get; set; }
 
     [Required]
     [Display(Name = "Gênero")]

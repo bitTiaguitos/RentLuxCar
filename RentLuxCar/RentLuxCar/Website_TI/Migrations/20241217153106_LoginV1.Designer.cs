@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Website_TI.Data;
 
@@ -11,9 +12,11 @@ using Website_TI.Data;
 namespace Website_TI.Migrations
 {
     [DbContext(typeof(Website_TIContext))]
-    partial class Website_TIContextModelSnapshot : ModelSnapshot
+    [Migration("20241217153106_LoginV1")]
+    partial class LoginV1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
