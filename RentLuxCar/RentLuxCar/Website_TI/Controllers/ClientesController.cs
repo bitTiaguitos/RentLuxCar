@@ -61,7 +61,7 @@ namespace Website_TI.Controllers
             {
                 var cliente = new Cliente
                 {
-                    Nome = model.Nome,
+                    Nome = model.NomeCompleto,
                     Genero = model.Genero,
                     Telemovel = model.Telemovel,
                     Senha = model.Senha, // Store as plaintext for now (hash later!)

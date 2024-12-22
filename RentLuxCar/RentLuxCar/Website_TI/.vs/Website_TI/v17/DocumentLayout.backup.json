@@ -13,26 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\models\\viewmodel\\clienteviewmodel\\clientecreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:models\\viewmodel\\clienteviewmodel\\clientecreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\credenciaisclientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\credenciaisclientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\views\\credenciaisclientes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:views\\credenciaisclientes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241217153106_LoginV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241217153106_LoginV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|c:\\users\\tiago\\documents\\.github\\rentluxcar\\rentluxcar\\rentluxcar\\website_ti\\data\\website_ticontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5717F772-3E73-414D-986B-12DE8D5C946D}|Website_TI.csproj|solutionrelative:data\\website_ticontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,67 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Clientes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Clientes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\Clientes\\Index.cshtml",
-              "RelativeToolTip": "Views\\Clientes\\Index.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T15:34:06.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\CredenciaisClientes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\CredenciaisClientes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\CredenciaisClientes\\Index.cshtml",
-              "RelativeToolTip": "Views\\CredenciaisClientes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T15:33:58.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\CredenciaisClientes\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\CredenciaisClientes\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Views\\CredenciaisClientes\\Edit.cshtml",
-              "RelativeToolTip": "Views\\CredenciaisClientes\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T15:33:57.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteCreateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:32:47.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\DTO\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\Cliente.cs",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\DTO\\Cliente.cs",
               "RelativeToolTip": "Models\\DTO\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:32:29.112Z",
+              "WhenOpened": "2024-12-17T15:20:48.412Z",
               "EditorCaption": ""
             },
             {
@@ -125,35 +53,22 @@
               "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
               "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Controllers\\ClientesController.cs",
               "RelativeToolTip": "Controllers\\ClientesController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAawEQAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAIA3wEAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:31:57.484Z",
+              "WhenOpened": "2024-12-17T15:12:28.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20241217153106_LoginV1.cs",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241217153106_LoginV1.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241217153106_LoginV1.cs",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Migrations\\20241217153106_LoginV1.cs",
-              "RelativeToolTip": "Migrations\\20241217153106_LoginV1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ClienteCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModel\\ClienteViewModel\\ClienteCreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:31:06.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Website_TIContext.cs",
-              "DocumentMoniker": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Data\\Website_TIContext.cs",
-              "RelativeDocumentMoniker": "Data\\Website_TIContext.cs",
-              "ToolTip": "C:\\Users\\tiago\\Documents\\.GitHub\\rentluxcar\\RentLuxCar\\RentLuxCar\\Website_TI\\Data\\Website_TIContext.cs",
-              "RelativeToolTip": "Data\\Website_TIContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T15:26:50.397Z",
+              "WhenOpened": "2024-12-17T15:08:52.236Z",
               "EditorCaption": ""
             }
           ]

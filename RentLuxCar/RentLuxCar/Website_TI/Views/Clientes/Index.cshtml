@@ -1,4 +1,4 @@
-﻿@model Website_TI.Models.ViewModel.ClienteCreateViewModel
+﻿@model IEnumerable<Website_TI.Models.DTO.Cliente>
 
 @{
     ViewData["Title"] = "Index";
@@ -12,24 +12,24 @@
         <section class="register-section">
             <div class="container">
 
-                <form asp-action="Create" asp-controller="Clientes" method="post">
-                    <label for="Nome">Nome Completo:</label>
-                    <input type="text" id="Nome" name="Nome" required>
+                <form style="text-align:center;" class="register-form" action="" method="post">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
 
-                    <label for="Genero">Gênero:</label>
-                    <select id="Genero" name="Genero" required>
+                    <label for="gender">Gênero:</label>
+                    <select id="gender" name="gender" required>
                         <option value="M">Masculino</option>
                         <option value="F">Feminino</option>
                     </select>
 
-                    <label for="Telemovel">Telemóvel:</label>
-                    <input type="text" id="Telemovel" name="Telemovel" required>
+                    <label for="phone">Telemóvel:</label>
+                    <input type="text" id="phone" name="phone" required>
 
-                    <label for="Senha">Senha:</label>
-                    <input type="password" id="Senha" name="Senha" required>
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
 
-                    <label for="Idade">Idade:</label>
-                    <input type="number" id="Idade" name="Idade" required>
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" required>
 
                     <button type="submit">Registrar</button>
                 </form>
