@@ -1,0 +1,10 @@
+09/01/2025 14:46:43	Este log contém informações sobre a operação de importação do script 'BD_Rentluxcar_para_BD&TI.sql' para o projeto 'RentLuxCarDataBase' no computador 'DESKTOP-IRI2936' pelo usuário 'tiago.
+09/01/2025 14:46:43	Iniciada a importação do arquivo: C:\Users\tiago\Documents\Base de Dados 2\BD_Rentluxcar_para_BD&TI.sql 
+09/01/2025 14:46:43	Nome do arquivo C:\Users\tiago\Documents\Base de Dados 2\BD_Rentluxcar_para_BD&TI.sql (tamanho: 14121)
+09/01/2025 14:46:43	Analisando script de importação
+09/01/2025 14:46:44	Número total de lotes no script: 1
+09/01/2025 14:46:44	Número total de instruções no script: 0
+09/01/2025 14:46:44	O scrip foi importado com êxito para o projeto.
+09/01/2025 14:46:44	No script fornecido para a operação de importação, uma ou mais instruções não foram completamente entendidas. Estas instruções foram movidas para o arquivo ScriptsIgnoredOnImport.sql. Examine o conteúdo do arquivo para obter mais informações.
+09/01/2025 14:46:44	Um resumo da importação foi salvo no seguinte local: C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\RentLuxCarDataBase\Importar Logs de Script\BD_Rentluxcar_para_B_20250109024643.log.
+09/01/2025 14:46:44	Clique em Concluir para continuar...

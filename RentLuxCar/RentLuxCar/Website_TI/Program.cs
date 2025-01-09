@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Configuration;
 using Website_TI.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Website_TIContext>(options =>
@@ -30,3 +31,4 @@ app.MapControllerRoute(
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+app.UseDeveloperExceptionPage();

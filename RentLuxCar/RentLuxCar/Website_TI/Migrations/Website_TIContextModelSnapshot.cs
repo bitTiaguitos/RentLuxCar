@@ -65,14 +65,22 @@ namespace Website_TI.Migrations
                     b.Property<DateTime>("DataDeCriacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Genero")
                         .IsRequired()
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Idade")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

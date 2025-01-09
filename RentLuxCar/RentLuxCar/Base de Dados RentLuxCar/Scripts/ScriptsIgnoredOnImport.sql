@@ -1,0 +1,1122 @@
+﻿
+--Erro de Sintaxe: Sintaxe incorreta próximo de TABELAS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #DADOS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de ).
+--Erro de Sintaxe: Sintaxe incorreta próximo de Describe.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #QUERIES.
+--Erro de Sintaxe: Esperava-se OFFSET, mas foi encontrado LIMIT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #TRIGGERS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de COLUMN.
+--Erro de Sintaxe: Sintaxe incorreta próximo de DELIMITER.
+--Erro de Sintaxe: Sintaxe incorreta próximo de CREATE.
+--Erro de Sintaxe: Sintaxe incorreta próximo de TRIGGER.
+--#CRIAÃ‡ÃƒO DE TABELAS
+--CREATE TABLE cliente (
+--    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+--    nome_cliente VARCHAR(255) NOT NULL,
+--    genero CHAR(1) NOT NULL,
+--    telemovel VARCHAR(255),
+--    idade INT NOT NULL,
+--    data_de_criacao TIMESTAMP NOT NULL DEFAULT NOW()
+--);
+--
+--CREATE TABLE credenciais_cliente (
+--    id_credenciais INT PRIMARY KEY AUTO_INCREMENT,
+--    id_cliente INT,
+--    nome_utilizador VARCHAR(100) NOT NULL UNIQUE,
+--    password_hash VARCHAR(255) NOT NULL,
+--    role VARCHAR(20) NOT NULL DEFAULT 'Cliente',
+--    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+--);
+--
+--CREATE TABLE viaturas (
+--    id_viatura INT PRIMARY KEY AUTO_INCREMENT,
+--    marca_viatura VARCHAR(30) NOT NULL,
+--    modelo_viatura VARCHAR(30) NOT NULL,
+--    tipo_viatura VARCHAR(20) NOT NULL,
+--    ano_viatura INT NOT NULL,
+--    preco_hora DECIMAL(10,2) NOT NULL,
+--    tipo_aluguer VARCHAR(30) NOT NULL
+--);
+--
+--CREATE TABLE tipos_de_viaturas (
+--    id_tipo_viatura INT PRIMARY KEY AUTO_INCREMENT,
+--    tipo_viatura VARCHAR(30) NOT NULL,
+--    valor_fixo_po_tipo DECIMAL(10,2) NOT NULL
+--);
+--
+--CREATE TABLE aluguer (
+--    id_aluguer INT PRIMARY KEY AUTO_INCREMENT,
+--    carro_alugado VARCHAR(255) NOT NULL UNIQUE,
+--    data_de_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    inicio_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    fim_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    entrega_viatura_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    id_cliente INT NOT NULL,
+--    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+--);
+--
+--CREATE TABLE pagamentos (
+--    id_pagamento INT PRIMARY KEY AUTO_INCREMENT,
+--    id_aluguer INT,
+--    valor DECIMAL(10, 2) NOT NULL,
+--    data_pagamento TIMESTAMP DEFAULT NOW(),
+--    estado_pagamento VARCHAR(50) NOT NULL,
+--    forma_pagamento VARCHAR(50)
+--);
+--
+--CREATE TABLE metodo_pagamentos (
+--    id_forma_pagamento INT PRIMARY KEY AUTO_INCREMENT,
+--    forma_pagamento VARCHAR(50)
+--);
+--
+--#DADOS
+--INSERT INTO cliente (nome_cliente, genero, telemovel, idade) VALUES
+--('Daniel Nunes', 'M', '912345678', 22);
+--
+--INSERT INTO credenciais_cliente (nome_utilizador, password_hash) VALUES
+--('Daniel Nunes', '12345678987654321');
+--
+--INSERT INTO viaturas (marca_viatura, modelo_viatura, tipo_viatura, ano_viatura, preco_hora, tipo_aluguer) VALUES
+--();
+--
+--INSERT INTO tipos_de_viaturas (tipo_viatura, valor_fixo_po_tipo) VALUES
+--('Super-Desportivo', 50);
+--
+--INSERT INTO aluguer (id_aluguer, carro_alugado, data_de_aluguer, inicio_aluguer, fim_aluguer, entrega_viatura_aluguer, id_cliente) VALUES
+--(1, 'Huracan', '2024-11-08', '2024-11-08 10:24:31', '2024-08-12 12:00:00', '2024-08-12 11:58:12', 1);
+--Describe aluguer;
+--
+--INSERT INTO pagamentos (valor, data_pagamento, estado_pagamento, forma_pagamento) VALUES
+--(1570, '2024-11-08 10:25:00', 'ConcluÃ­do', 'Multibanco');
+--
+--INSERT INTO metodo_pagamentos (forma_pagamento) VALUES
+--('Multibanco');
+--#QUERIES
+---- Selecionar todas as viaturas
+--SELECT * FROM viaturas;
+--
+---- Procurar detalhes de um cliente especÃ­fico
+--SELECT c.*
+--FROM cliente c
+--JOIN credenciais_cliente cc ON c.id_cliente = cc.id_cliente
+--WHERE cc.nome_utilizador = 'Daniel Nunes';
+--
+---- Selecionar todos os alugueres para um cliente especÃ­fico
+--SELECT a.*
+--FROM aluguer a
+--JOIN cliente c ON c.id_cliente = a.id_cliente
+--WHERE c.nome_cliente = 'Daniel Nunes';
+--
+---- Selecionar o custo total para um aluguer
+--SELECT p.valor AS total_paid
+--FROM pagamentos p
+--WHERE p.id_aluguer = 1;
+--
+---- Selecionar todos os alugueres dentro de uma data especÃ­fica
+--SELECT *
+--FROM aluguer
+--WHERE inicio_aluguer BETWEEN '2024-11-01' AND '2024-11-30';
+--
+---- Listar todos os mÃ©todos de pagamento
+--SELECT * FROM metodo_pagamentos;
+--
+---- Listar todos os pagamentos feitos por um cliente especÃ­fico
+--SELECT p.*
+--FROM pagamentos p
+--JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN cliente c ON c.id_cliente = a.id_cliente
+--WHERE c.nome_cliente = 'Daniel Nunes';
+--
+---- Atualizar o tempo de fim de aluguer e o seu estado
+--UPDATE aluguer
+--SET fim_aluguer = '2024-11-12 14:00:00', entrega_viatura_aluguer = '2024-11-12 14:05:00'
+--WHERE id_aluguer = 1;
+--
+---- Listar o nÃºmero de alugueres por tipo de viatura
+--SELECT v.tipo_viatura, COUNT(a.id_aluguer) AS total_rentals
+--FROM aluguer a
+--JOIN viaturas v ON a.carro_alugado = v.modelo_viatura
+--GROUP BY v.tipo_viatura;
+--
+---- Listar histÃ³rico de alugueres para um carro especÃ­fico
+--SELECT *
+--FROM aluguer
+--WHERE carro_alugado = 'Huracan';
+--
+---- Listar todos os alugueres em ativo, com a informaÃ§Ã£o do cliente e o carro que alugaram
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    c.telemovel AS ClientPhone,
+--    v.marca_viatura AS CarBrand,
+--    v.modelo_viatura AS CarModel,
+--    a.inicio_aluguer AS RentalStart,
+--    a.fim_aluguer AS RentalEnd
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    a.fim_aluguer > NOW();
+--
+---- Gerar o total ganho com cada viatura baseado nos alugueres concluidos
+--SELECT 
+--    v.modelo_viatura AS CarModel,
+--    SUM(p.valor) AS TotalRevenue
+--FROM 
+--    pagamentos p
+--JOIN 
+--    aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    v.modelo_viatura
+--ORDER BY 
+--    TotalRevenue DESC;
+--
+---- Listar clientes com o total de alugueres que realizaram, bem como o total que gastaram em alugueres
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    c.telemovel AS ClientPhone,
+--    COUNT(a.id_aluguer) AS RentalCount,
+--    SUM(p.valor) AS TotalSpent
+--FROM 
+--    cliente c
+--JOIN 
+--    aluguer a ON c.id_cliente = a.id_cliente
+--JOIN 
+--    pagamentos p ON a.id_aluguer = p.id_aluguer
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    c.id_cliente
+--ORDER BY 
+--    TotalSpent DESC;
+--
+---- Listar o tipo de carro que foi alugado mais vezes
+--SELECT 
+--    v.tipo_viatura AS CarType,
+--    COUNT(a.id_aluguer) AS RentalCount
+--FROM 
+--    aluguer a
+--JOIN 
+--    viaturas v ON a.carro_alugado = v.modelo_viatura
+--GROUP BY 
+--    v.tipo_viatura
+--ORDER BY 
+--    RentalCount DESC
+--LIMIT 1;
+--
+---- Listar veÃ­culos em atraso (data de fim jÃ¡ passou mas a viatura ainda nÃ£o foi entregue)
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    v.modelo_viatura AS CarModel,
+--    a.fim_aluguer AS ExpectedReturn,
+--    TIMESTAMPDIFF(HOUR, a.fim_aluguer, NOW()) AS OverdueHours
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    a.fim_aluguer < NOW() 
+--    AND a.entrega_viatura_aluguer > NOW();
+--
+---- Obter o preÃ§o mÃ©dio por hora e diÃ¡rio de cada tipo de carro
+--SELECT 
+--    v.tipo_viatura AS CarType,
+--    AVG(v.preco_hora) AS AvgHourlyRate,
+--    AVG(v.preco_hora * 24) AS AvgDailyRate
+--FROM 
+--    viaturas v
+--GROUP BY 
+--    v.tipo_viatura;
+--
+---- Resumo de alugueres por mÃªs com total de alugueres, clientes diferentes e lucro total
+--SELECT 
+--    DATE_FORMAT(a.data_de_aluguer, '%Y-%m') AS RentalMonth,
+--    COUNT(a.id_aluguer) AS TotalRentals,
+--    COUNT(DISTINCT a.id_cliente) AS DistinctClients,
+--    SUM(p.valor) AS TotalRevenue
+--FROM 
+--    aluguer a
+--JOIN 
+--    pagamentos p ON a.id_aluguer = p.id_aluguer
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    RentalMonth
+--ORDER BY 
+--    RentalMonth DESC;
+--
+---- Calcular o tempo total que cada carro foi alugado (em horas)
+--SELECT 
+--    v.modelo_viatura AS CarModel,
+--    SUM(TIMESTAMPDIFF(HOUR, a.inicio_aluguer, a.fim_aluguer)) AS TotalRentalHours
+--FROM 
+--    aluguer a
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--GROUP BY 
+--    v.modelo_viatura
+--ORDER BY 
+--    TotalRentalHours DESC;
+--    
+--    
+--#TRIGGERS
+--#Trigger para Atualizar a Data de ModificaÃ§Ã£o do Cliente
+--
+--ALTER TABLE cliente ADD COLUMN data_de_modificacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+--
+--DELIMITER //
+--CREATE TRIGGER update_cliente_mod_time
+--BEFORE UPDATE ON cliente
+--FOR EACH ROW
+--BEGIN
+--    SET NEW.data_de_modificacao = CURRENT_TIMESTAMP;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Calcular Total de Pagamentos de um Aluguer
+--DELIMITER //
+--CREATE TRIGGER after_insert_pagamento
+--AFTER INSERT ON pagamentos
+--FOR EACH ROW
+--BEGIN
+--    DECLARE total DECIMAL(10,2);
+--    SET total = (SELECT SUM(valor) FROM pagamentos WHERE id_aluguer = NEW.id_aluguer);
+--    UPDATE aluguer SET total_pagamentos = total WHERE id_aluguer = NEW.id_aluguer;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Verificar Disponibilidade de Viatura
+--DELIMITER //
+--CREATE TRIGGER before_insert_aluguer
+--BEFORE INSERT ON aluguer
+--FOR EACH ROW
+--BEGIN
+--    IF (SELECT COUNT(*) FROM aluguer WHERE carro_alugado = NEW.carro_alugado AND fim_aluguer > NOW()) > 0 THEN
+--        SIGNAL SQLSTATE '45000'
+--        SET MESSAGE_TEXT = 'Carro jÃ¡ estÃ¡ alugado no perÃ­odo selecionado.';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Verificar Disponibilidade de Viatura
+--DELIMITER //
+--CREATE TRIGGER before_insert_aluguer
+--BEFORE INSERT ON aluguer
+--FOR EACH ROW
+--BEGIN
+--    IF (SELECT COUNT(*) FROM aluguer WHERE carro_alugado = NEW.carro_alugado AND fim_aluguer > NOW()) > 0 THEN
+--        SIGNAL SQLSTATE '45000'
+--        SET MESSAGE_TEXT = 'Carro jÃ¡ estÃ¡ alugado no perÃ­odo selecionado.';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Atualizar Estado do Pagamento
+--DELIMITER //
+--CREATE TRIGGER update_pagamento_status
+--BEFORE INSERT ON pagamentos
+--FOR EACH ROW
+--BEGIN
+--    IF NEW.valor = 0 THEN
+--        SET NEW.estado_pagamento = 'NÃ£o Pago';
+--    ELSE
+--        SET NEW.estado_pagamento = 'Pago';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#STORED PROCEDURES
+--
+--#Procedure para Adicionar um Novo Cliente
+--DELIMITER //
+--CREATE PROCEDURE AddCliente (
+--    IN nome VARCHAR(255),
+--    IN genero CHAR(1),
+--    IN telemovel VARCHAR(255),
+--    IN idade INT
+--)
+--BEGIN
+--    INSERT INTO cliente (nome_cliente, genero, telemovel, idade, data_de_criacao) 
+--    VALUES (nome, genero, telemovel, idade, NOW());
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Atualizar os Detalhes de um Cliente
+--DELIMITER //
+--CREATE PROCEDURE UpdateCliente (
+--    IN cliente_id INT,
+--    IN nome VARCHAR(255),
+--    IN genero CHAR(1),
+--    IN telemovel VARCHAR(255),
+--    IN idade INT
+--)
+--BEGIN
+--    UPDATE cliente 
+--    SET nome_cliente = nome, genero = genero, telemovel = telemovel, idade = idade, data_de_modificacao = NOW()
+--    WHERE id_cliente = cliente_id;
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Registrar um Novo Aluguer
+--DELIMITER //
+--CREATE PROCEDURE AddAluguer (
+--    IN carro VARCHAR(255),
+--    IN cliente_id INT,
+--    IN inicio TIMESTAMP,
+--    IN fim TIMESTAMP
+--)
+--BEGIN
+--    INSERT INTO aluguer (carro_alugado, data_de_aluguer, inicio_aluguer, fim_aluguer, id_cliente, entrega_viatura_aluguer) 
+--    VALUES (carro, NOW(), inicio, fim, cliente_id, NOW());
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Calcular Total de Pagamentos de um Cliente
+--DELIMITER //
+--CREATE PROCEDURE GetTotalPaymentsByClient (
+--    IN cliente_id INT,
+--    OUT total DECIMAL(10,2)
+--)
+--BEGIN
+--    SELECT SUM(p.valor)
+--    INTO total
+--    FROM pagamentos p
+--    JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--    WHERE a.id_cliente = cliente_id AND p.estado_pagamento = 'ConcluÃ­do';
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Listar Alugueres em Ativo
+--DELIMITER //
+--CREATE PROCEDURE GetActiveRentals ()
+--BEGIN
+--    SELECT 
+--        c.nome_cliente AS ClientName,
+--        c.telemovel AS ClientPhone,
+--        v.marca_viatura AS CarBrand,
+--        v.modelo_viatura AS CarModel,
+--        a.inicio_aluguer AS RentalStart,
+--        a.fim_aluguer AS RentalEnd
+--    FROM 
+--        aluguer a
+--    JOIN 
+--        cliente c ON a.id_cliente = c.id_cliente
+--    JOIN 
+--        viaturas v ON v.modelo_viatura = a.carro_alugado
+--    WHERE 
+--        a.fim_aluguer > NOW();
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ãµes
+--
+--#FunÃ§Ã£o para Obter o Nome de um Cliente a partir do ID
+--DELIMITER //
+--CREATE FUNCTION GetClientName (client_id INT) 
+--RETURNS VARCHAR(255)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE client_name VARCHAR(255);
+--    SELECT nome_cliente INTO client_name 
+--    FROM cliente 
+--    WHERE id_cliente = client_id;
+--    RETURN client_name;
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Calcular o Total Pago por um Cliente
+--DELIMITER //
+--CREATE FUNCTION TotalPaidByClient (client_id INT) 
+--RETURNS DECIMAL(10, 2)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE total_paid DECIMAL(10, 2);
+--    SELECT SUM(p.valor) INTO total_paid
+--    FROM pagamentos p
+--    JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--    WHERE a.id_cliente = client_id AND p.estado_pagamento = 'ConcluÃ­do';
+--    RETURN IFNULL(total_paid, 0.00);
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Contar o NÃºmero de Alugueres por Tipo de Viatura
+--DELIMITER //
+--CREATE FUNCTION RentalCountByCarType (car_type VARCHAR(30)) 
+--RETURNS INT
+--DETERMINISTIC
+--BEGIN
+--    DECLARE rental_count INT;
+--    SELECT COUNT(a.id_aluguer) INTO rental_count
+--    FROM aluguer a
+--    JOIN viaturas v ON a.carro_alugado = v.modelo_viatura
+--    WHERE v.tipo_viatura = car_type;
+--    RETURN rental_count;
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Obter o Tipo de Viatura Mais Alugada
+--DELIMITER //
+--CREATE FUNCTION MostRentedCarType () 
+--RETURNS VARCHAR(30)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE car_type VARCHAR(30);
+--    SELECT v.tipo_viatura 
+--    INTO car_type
+--    FROM viaturas v
+--    JOIN aluguer a ON v.modelo_viatura = a.carro_alugado
+--    GROUP BY v.tipo_viatura
+--    ORDER BY COUNT(a.id_aluguer) DESC
+--    LIMIT 1;
+--    RETURN car_type;
+--END;
+--//
+--DELIMITER ;
+--
+--#Vews
+--
+--#View para listar todos os clientes e suas credenciais
+--CREATE VIEW vw_clientes_credenciais AS
+--SELECT 
+--    c.id_cliente,
+--    c.nome_cliente,
+--    c.genero,
+--    c.telemovel,
+--    c.idade,
+--    c.data_de_criacao,
+--    c.data_de_modificacao,
+--    cc.nome_utilizador,
+--    cc.role
+--FROM 
+--    cliente c
+--JOIN 
+--    credenciais_cliente cc ON c.id_cliente = cc.id_cliente;
+--
+--#View para listar todos os alugueres e os detalhes dos clientes
+--CREATE VIEW vw_alugueres_clientes AS
+--SELECT 
+--    a.id_aluguer,
+--    a.carro_alugado,
+--    a.data_de_aluguer,
+--    a.inicio_aluguer,
+--    a.fim_aluguer,
+--    a.entrega_viatura_aluguer,
+--    c.nome_cliente,
+--    c.telemovel
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente;
+--    
+--#View para listar todos os pagamentos e os detalhes dos alugueres e clientes
+--    CREATE VIEW vw_pagamentos_detalhes AS
+--SELECT 
+--    p.id_pagamento,
+--    p.id_aluguer,
+--    p.valor,
+--    p.data_pagamento,
+--    p.estado_pagamento,
+--    p.forma_pagamento,
+--    a.carro_alugado,
+--    c.nome_cliente,
+--    c.telemovel
+--FROM 
+--    pagamentos p
+--JOIN 
+--    aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente;
+
+
+
+GO
+
+--Erro de Sintaxe: Sintaxe incorreta próximo de TABELAS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de AUTO_INCREMENT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #DADOS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de ).
+--Erro de Sintaxe: Sintaxe incorreta próximo de Describe.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #QUERIES.
+--Erro de Sintaxe: Esperava-se OFFSET, mas foi encontrado LIMIT.
+--Erro de Sintaxe: Sintaxe incorreta próximo de #TRIGGERS.
+--Erro de Sintaxe: Sintaxe incorreta próximo de COLUMN.
+--Erro de Sintaxe: Sintaxe incorreta próximo de DELIMITER.
+--Erro de Sintaxe: Sintaxe incorreta próximo de CREATE.
+--Erro de Sintaxe: Sintaxe incorreta próximo de TRIGGER.
+--#CRIAÃ‡ÃƒO DE TABELAS
+--CREATE TABLE cliente (
+--    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+--    nome_cliente VARCHAR(255) NOT NULL,
+--    genero CHAR(1) NOT NULL,
+--    telemovel VARCHAR(255),
+--    idade INT NOT NULL,
+--    data_de_criacao TIMESTAMP NOT NULL DEFAULT NOW()
+--);
+--
+--CREATE TABLE credenciais_cliente (
+--    id_credenciais INT PRIMARY KEY AUTO_INCREMENT,
+--    id_cliente INT,
+--    nome_utilizador VARCHAR(100) NOT NULL UNIQUE,
+--    password_hash VARCHAR(255) NOT NULL,
+--    role VARCHAR(20) NOT NULL DEFAULT 'Cliente',
+--    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+--);
+--
+--CREATE TABLE viaturas (
+--    id_viatura INT PRIMARY KEY AUTO_INCREMENT,
+--    marca_viatura VARCHAR(30) NOT NULL,
+--    modelo_viatura VARCHAR(30) NOT NULL,
+--    tipo_viatura VARCHAR(20) NOT NULL,
+--    ano_viatura INT NOT NULL,
+--    preco_hora DECIMAL(10,2) NOT NULL,
+--    tipo_aluguer VARCHAR(30) NOT NULL
+--);
+--
+--CREATE TABLE tipos_de_viaturas (
+--    id_tipo_viatura INT PRIMARY KEY AUTO_INCREMENT,
+--    tipo_viatura VARCHAR(30) NOT NULL,
+--    valor_fixo_po_tipo DECIMAL(10,2) NOT NULL
+--);
+--
+--CREATE TABLE aluguer (
+--    id_aluguer INT PRIMARY KEY AUTO_INCREMENT,
+--    carro_alugado VARCHAR(255) NOT NULL UNIQUE,
+--    data_de_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    inicio_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    fim_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    entrega_viatura_aluguer TIMESTAMP NOT NULL DEFAULT NOW(),
+--    id_cliente INT NOT NULL,
+--    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+--);
+--
+--CREATE TABLE pagamentos (
+--    id_pagamento INT PRIMARY KEY AUTO_INCREMENT,
+--    id_aluguer INT,
+--    valor DECIMAL(10, 2) NOT NULL,
+--    data_pagamento TIMESTAMP DEFAULT NOW(),
+--    estado_pagamento VARCHAR(50) NOT NULL,
+--    forma_pagamento VARCHAR(50)
+--);
+--
+--CREATE TABLE metodo_pagamentos (
+--    id_forma_pagamento INT PRIMARY KEY AUTO_INCREMENT,
+--    forma_pagamento VARCHAR(50)
+--);
+--
+--#DADOS
+--INSERT INTO cliente (nome_cliente, genero, telemovel, idade) VALUES
+--('Daniel Nunes', 'M', '912345678', 22);
+--
+--INSERT INTO credenciais_cliente (nome_utilizador, password_hash) VALUES
+--('Daniel Nunes', '12345678987654321');
+--
+--INSERT INTO viaturas (marca_viatura, modelo_viatura, tipo_viatura, ano_viatura, preco_hora, tipo_aluguer) VALUES
+--();
+--
+--INSERT INTO tipos_de_viaturas (tipo_viatura, valor_fixo_po_tipo) VALUES
+--('Super-Desportivo', 50);
+--
+--INSERT INTO aluguer (id_aluguer, carro_alugado, data_de_aluguer, inicio_aluguer, fim_aluguer, entrega_viatura_aluguer, id_cliente) VALUES
+--(1, 'Huracan', '2024-11-08', '2024-11-08 10:24:31', '2024-08-12 12:00:00', '2024-08-12 11:58:12', 1);
+--Describe aluguer;
+--
+--INSERT INTO pagamentos (valor, data_pagamento, estado_pagamento, forma_pagamento) VALUES
+--(1570, '2024-11-08 10:25:00', 'ConcluÃ­do', 'Multibanco');
+--
+--INSERT INTO metodo_pagamentos (forma_pagamento) VALUES
+--('Multibanco');
+--#QUERIES
+---- Selecionar todas as viaturas
+--SELECT * FROM viaturas;
+--
+---- Procurar detalhes de um cliente especÃ­fico
+--SELECT c.*
+--FROM cliente c
+--JOIN credenciais_cliente cc ON c.id_cliente = cc.id_cliente
+--WHERE cc.nome_utilizador = 'Daniel Nunes';
+--
+---- Selecionar todos os alugueres para um cliente especÃ­fico
+--SELECT a.*
+--FROM aluguer a
+--JOIN cliente c ON c.id_cliente = a.id_cliente
+--WHERE c.nome_cliente = 'Daniel Nunes';
+--
+---- Selecionar o custo total para um aluguer
+--SELECT p.valor AS total_paid
+--FROM pagamentos p
+--WHERE p.id_aluguer = 1;
+--
+---- Selecionar todos os alugueres dentro de uma data especÃ­fica
+--SELECT *
+--FROM aluguer
+--WHERE inicio_aluguer BETWEEN '2024-11-01' AND '2024-11-30';
+--
+---- Listar todos os mÃ©todos de pagamento
+--SELECT * FROM metodo_pagamentos;
+--
+---- Listar todos os pagamentos feitos por um cliente especÃ­fico
+--SELECT p.*
+--FROM pagamentos p
+--JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN cliente c ON c.id_cliente = a.id_cliente
+--WHERE c.nome_cliente = 'Daniel Nunes';
+--
+---- Atualizar o tempo de fim de aluguer e o seu estado
+--UPDATE aluguer
+--SET fim_aluguer = '2024-11-12 14:00:00', entrega_viatura_aluguer = '2024-11-12 14:05:00'
+--WHERE id_aluguer = 1;
+--
+---- Listar o nÃºmero de alugueres por tipo de viatura
+--SELECT v.tipo_viatura, COUNT(a.id_aluguer) AS total_rentals
+--FROM aluguer a
+--JOIN viaturas v ON a.carro_alugado = v.modelo_viatura
+--GROUP BY v.tipo_viatura;
+--
+---- Listar histÃ³rico de alugueres para um carro especÃ­fico
+--SELECT *
+--FROM aluguer
+--WHERE carro_alugado = 'Huracan';
+--
+---- Listar todos os alugueres em ativo, com a informaÃ§Ã£o do cliente e o carro que alugaram
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    c.telemovel AS ClientPhone,
+--    v.marca_viatura AS CarBrand,
+--    v.modelo_viatura AS CarModel,
+--    a.inicio_aluguer AS RentalStart,
+--    a.fim_aluguer AS RentalEnd
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    a.fim_aluguer > NOW();
+--
+---- Gerar o total ganho com cada viatura baseado nos alugueres concluidos
+--SELECT 
+--    v.modelo_viatura AS CarModel,
+--    SUM(p.valor) AS TotalRevenue
+--FROM 
+--    pagamentos p
+--JOIN 
+--    aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    v.modelo_viatura
+--ORDER BY 
+--    TotalRevenue DESC;
+--
+---- Listar clientes com o total de alugueres que realizaram, bem como o total que gastaram em alugueres
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    c.telemovel AS ClientPhone,
+--    COUNT(a.id_aluguer) AS RentalCount,
+--    SUM(p.valor) AS TotalSpent
+--FROM 
+--    cliente c
+--JOIN 
+--    aluguer a ON c.id_cliente = a.id_cliente
+--JOIN 
+--    pagamentos p ON a.id_aluguer = p.id_aluguer
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    c.id_cliente
+--ORDER BY 
+--    TotalSpent DESC;
+--
+---- Listar o tipo de carro que foi alugado mais vezes
+--SELECT 
+--    v.tipo_viatura AS CarType,
+--    COUNT(a.id_aluguer) AS RentalCount
+--FROM 
+--    aluguer a
+--JOIN 
+--    viaturas v ON a.carro_alugado = v.modelo_viatura
+--GROUP BY 
+--    v.tipo_viatura
+--ORDER BY 
+--    RentalCount DESC
+--LIMIT 1;
+--
+---- Listar veÃ­culos em atraso (data de fim jÃ¡ passou mas a viatura ainda nÃ£o foi entregue)
+--SELECT 
+--    c.nome_cliente AS ClientName,
+--    v.modelo_viatura AS CarModel,
+--    a.fim_aluguer AS ExpectedReturn,
+--    TIMESTAMPDIFF(HOUR, a.fim_aluguer, NOW()) AS OverdueHours
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--WHERE 
+--    a.fim_aluguer < NOW() 
+--    AND a.entrega_viatura_aluguer > NOW();
+--
+---- Obter o preÃ§o mÃ©dio por hora e diÃ¡rio de cada tipo de carro
+--SELECT 
+--    v.tipo_viatura AS CarType,
+--    AVG(v.preco_hora) AS AvgHourlyRate,
+--    AVG(v.preco_hora * 24) AS AvgDailyRate
+--FROM 
+--    viaturas v
+--GROUP BY 
+--    v.tipo_viatura;
+--
+---- Resumo de alugueres por mÃªs com total de alugueres, clientes diferentes e lucro total
+--SELECT 
+--    DATE_FORMAT(a.data_de_aluguer, '%Y-%m') AS RentalMonth,
+--    COUNT(a.id_aluguer) AS TotalRentals,
+--    COUNT(DISTINCT a.id_cliente) AS DistinctClients,
+--    SUM(p.valor) AS TotalRevenue
+--FROM 
+--    aluguer a
+--JOIN 
+--    pagamentos p ON a.id_aluguer = p.id_aluguer
+--WHERE 
+--    p.estado_pagamento = 'ConcluÃ­do'
+--GROUP BY 
+--    RentalMonth
+--ORDER BY 
+--    RentalMonth DESC;
+--
+---- Calcular o tempo total que cada carro foi alugado (em horas)
+--SELECT 
+--    v.modelo_viatura AS CarModel,
+--    SUM(TIMESTAMPDIFF(HOUR, a.inicio_aluguer, a.fim_aluguer)) AS TotalRentalHours
+--FROM 
+--    aluguer a
+--JOIN 
+--    viaturas v ON v.modelo_viatura = a.carro_alugado
+--GROUP BY 
+--    v.modelo_viatura
+--ORDER BY 
+--    TotalRentalHours DESC;
+--    
+--    
+--#TRIGGERS
+--#Trigger para Atualizar a Data de ModificaÃ§Ã£o do Cliente
+--
+--ALTER TABLE cliente ADD COLUMN data_de_modificacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+--
+--DELIMITER //
+--CREATE TRIGGER update_cliente_mod_time
+--BEFORE UPDATE ON cliente
+--FOR EACH ROW
+--BEGIN
+--    SET NEW.data_de_modificacao = CURRENT_TIMESTAMP;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Calcular Total de Pagamentos de um Aluguer
+--DELIMITER //
+--CREATE TRIGGER after_insert_pagamento
+--AFTER INSERT ON pagamentos
+--FOR EACH ROW
+--BEGIN
+--    DECLARE total DECIMAL(10,2);
+--    SET total = (SELECT SUM(valor) FROM pagamentos WHERE id_aluguer = NEW.id_aluguer);
+--    UPDATE aluguer SET total_pagamentos = total WHERE id_aluguer = NEW.id_aluguer;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Verificar Disponibilidade de Viatura
+--DELIMITER //
+--CREATE TRIGGER before_insert_aluguer
+--BEFORE INSERT ON aluguer
+--FOR EACH ROW
+--BEGIN
+--    IF (SELECT COUNT(*) FROM aluguer WHERE carro_alugado = NEW.carro_alugado AND fim_aluguer > NOW()) > 0 THEN
+--        SIGNAL SQLSTATE '45000'
+--        SET MESSAGE_TEXT = 'Carro jÃ¡ estÃ¡ alugado no perÃ­odo selecionado.';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Verificar Disponibilidade de Viatura
+--DELIMITER //
+--CREATE TRIGGER before_insert_aluguer
+--BEFORE INSERT ON aluguer
+--FOR EACH ROW
+--BEGIN
+--    IF (SELECT COUNT(*) FROM aluguer WHERE carro_alugado = NEW.carro_alugado AND fim_aluguer > NOW()) > 0 THEN
+--        SIGNAL SQLSTATE '45000'
+--        SET MESSAGE_TEXT = 'Carro jÃ¡ estÃ¡ alugado no perÃ­odo selecionado.';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#Trigger para Atualizar Estado do Pagamento
+--DELIMITER //
+--CREATE TRIGGER update_pagamento_status
+--BEFORE INSERT ON pagamentos
+--FOR EACH ROW
+--BEGIN
+--    IF NEW.valor = 0 THEN
+--        SET NEW.estado_pagamento = 'NÃ£o Pago';
+--    ELSE
+--        SET NEW.estado_pagamento = 'Pago';
+--    END IF;
+--END;
+--//
+--DELIMITER ;
+--
+--#STORED PROCEDURES
+--
+--#Procedure para Adicionar um Novo Cliente
+--DELIMITER //
+--CREATE PROCEDURE AddCliente (
+--    IN nome VARCHAR(255),
+--    IN genero CHAR(1),
+--    IN telemovel VARCHAR(255),
+--    IN idade INT
+--)
+--BEGIN
+--    INSERT INTO cliente (nome_cliente, genero, telemovel, idade, data_de_criacao) 
+--    VALUES (nome, genero, telemovel, idade, NOW());
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Atualizar os Detalhes de um Cliente
+--DELIMITER //
+--CREATE PROCEDURE UpdateCliente (
+--    IN cliente_id INT,
+--    IN nome VARCHAR(255),
+--    IN genero CHAR(1),
+--    IN telemovel VARCHAR(255),
+--    IN idade INT
+--)
+--BEGIN
+--    UPDATE cliente 
+--    SET nome_cliente = nome, genero = genero, telemovel = telemovel, idade = idade, data_de_modificacao = NOW()
+--    WHERE id_cliente = cliente_id;
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Registrar um Novo Aluguer
+--DELIMITER //
+--CREATE PROCEDURE AddAluguer (
+--    IN carro VARCHAR(255),
+--    IN cliente_id INT,
+--    IN inicio TIMESTAMP,
+--    IN fim TIMESTAMP
+--)
+--BEGIN
+--    INSERT INTO aluguer (carro_alugado, data_de_aluguer, inicio_aluguer, fim_aluguer, id_cliente, entrega_viatura_aluguer) 
+--    VALUES (carro, NOW(), inicio, fim, cliente_id, NOW());
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Calcular Total de Pagamentos de um Cliente
+--DELIMITER //
+--CREATE PROCEDURE GetTotalPaymentsByClient (
+--    IN cliente_id INT,
+--    OUT total DECIMAL(10,2)
+--)
+--BEGIN
+--    SELECT SUM(p.valor)
+--    INTO total
+--    FROM pagamentos p
+--    JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--    WHERE a.id_cliente = cliente_id AND p.estado_pagamento = 'ConcluÃ­do';
+--END;
+--//
+--DELIMITER ;
+--
+--#Procedure para Listar Alugueres em Ativo
+--DELIMITER //
+--CREATE PROCEDURE GetActiveRentals ()
+--BEGIN
+--    SELECT 
+--        c.nome_cliente AS ClientName,
+--        c.telemovel AS ClientPhone,
+--        v.marca_viatura AS CarBrand,
+--        v.modelo_viatura AS CarModel,
+--        a.inicio_aluguer AS RentalStart,
+--        a.fim_aluguer AS RentalEnd
+--    FROM 
+--        aluguer a
+--    JOIN 
+--        cliente c ON a.id_cliente = c.id_cliente
+--    JOIN 
+--        viaturas v ON v.modelo_viatura = a.carro_alugado
+--    WHERE 
+--        a.fim_aluguer > NOW();
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ãµes
+--
+--#FunÃ§Ã£o para Obter o Nome de um Cliente a partir do ID
+--DELIMITER //
+--CREATE FUNCTION GetClientName (client_id INT) 
+--RETURNS VARCHAR(255)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE client_name VARCHAR(255);
+--    SELECT nome_cliente INTO client_name 
+--    FROM cliente 
+--    WHERE id_cliente = client_id;
+--    RETURN client_name;
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Calcular o Total Pago por um Cliente
+--DELIMITER //
+--CREATE FUNCTION TotalPaidByClient (client_id INT) 
+--RETURNS DECIMAL(10, 2)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE total_paid DECIMAL(10, 2);
+--    SELECT SUM(p.valor) INTO total_paid
+--    FROM pagamentos p
+--    JOIN aluguer a ON p.id_aluguer = a.id_aluguer
+--    WHERE a.id_cliente = client_id AND p.estado_pagamento = 'ConcluÃ­do';
+--    RETURN IFNULL(total_paid, 0.00);
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Contar o NÃºmero de Alugueres por Tipo de Viatura
+--DELIMITER //
+--CREATE FUNCTION RentalCountByCarType (car_type VARCHAR(30)) 
+--RETURNS INT
+--DETERMINISTIC
+--BEGIN
+--    DECLARE rental_count INT;
+--    SELECT COUNT(a.id_aluguer) INTO rental_count
+--    FROM aluguer a
+--    JOIN viaturas v ON a.carro_alugado = v.modelo_viatura
+--    WHERE v.tipo_viatura = car_type;
+--    RETURN rental_count;
+--END;
+--//
+--DELIMITER ;
+--
+--#FunÃ§Ã£o para Obter o Tipo de Viatura Mais Alugada
+--DELIMITER //
+--CREATE FUNCTION MostRentedCarType () 
+--RETURNS VARCHAR(30)
+--DETERMINISTIC
+--BEGIN
+--    DECLARE car_type VARCHAR(30);
+--    SELECT v.tipo_viatura 
+--    INTO car_type
+--    FROM viaturas v
+--    JOIN aluguer a ON v.modelo_viatura = a.carro_alugado
+--    GROUP BY v.tipo_viatura
+--    ORDER BY COUNT(a.id_aluguer) DESC
+--    LIMIT 1;
+--    RETURN car_type;
+--END;
+--//
+--DELIMITER ;
+--
+--#Vews
+--
+--#View para listar todos os clientes e suas credenciais
+--CREATE VIEW vw_clientes_credenciais AS
+--SELECT 
+--    c.id_cliente,
+--    c.nome_cliente,
+--    c.genero,
+--    c.telemovel,
+--    c.idade,
+--    c.data_de_criacao,
+--    c.data_de_modificacao,
+--    cc.nome_utilizador,
+--    cc.role
+--FROM 
+--    cliente c
+--JOIN 
+--    credenciais_cliente cc ON c.id_cliente = cc.id_cliente;
+--
+--#View para listar todos os alugueres e os detalhes dos clientes
+--CREATE VIEW vw_alugueres_clientes AS
+--SELECT 
+--    a.id_aluguer,
+--    a.carro_alugado,
+--    a.data_de_aluguer,
+--    a.inicio_aluguer,
+--    a.fim_aluguer,
+--    a.entrega_viatura_aluguer,
+--    c.nome_cliente,
+--    c.telemovel
+--FROM 
+--    aluguer a
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente;
+--    
+--#View para listar todos os pagamentos e os detalhes dos alugueres e clientes
+--    CREATE VIEW vw_pagamentos_detalhes AS
+--SELECT 
+--    p.id_pagamento,
+--    p.id_aluguer,
+--    p.valor,
+--    p.data_pagamento,
+--    p.estado_pagamento,
+--    p.forma_pagamento,
+--    a.carro_alugado,
+--    c.nome_cliente,
+--    c.telemovel
+--FROM 
+--    pagamentos p
+--JOIN 
+--    aluguer a ON p.id_aluguer = a.id_aluguer
+--JOIN 
+--    cliente c ON a.id_cliente = c.id_cliente;
+
+
+
+GO

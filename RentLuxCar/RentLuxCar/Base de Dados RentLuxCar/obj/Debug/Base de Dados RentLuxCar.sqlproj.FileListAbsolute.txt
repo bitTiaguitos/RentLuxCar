@@ -1,0 +1,6 @@
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\bin\Debug\Base de Dados RentLuxCar.dacpac
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\bin\Debug\Base_de_Dados_RentLuxCar.dll
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\bin\Debug\Base_de_Dados_RentLuxCar.pdb
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\obj\Debug\Base de Dados RentLuxCar.sqlproj.AssemblyReference.cache
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\obj\Debug\Base_de_Dados_RentLuxCar.dll
+C:\Users\tiago\Documents\.GitHub\rentluxcar\RentLuxCar\RentLuxCar\Base de Dados RentLuxCar\obj\Debug\Base_de_Dados_RentLuxCar.pdb

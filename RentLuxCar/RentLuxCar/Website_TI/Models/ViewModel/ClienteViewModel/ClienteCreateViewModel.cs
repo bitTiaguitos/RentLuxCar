@@ -1,28 +1,28 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-
-public class ClienteCreateViewModel
+namespace Website_TI.Models.ViewModel
 {
-    [Required]
-    [Display(Name = "Nome Completo")]
-    public string NomeCompleto { get; set; }
+    public class ClienteCreateViewModel
+    {
+        [Required]
+        public string Nome { get; set; }
 
-    [Required]
-    [Display(Name = "Gênero")]
-    public string Genero { get; set; }
+        [Required]
+        public string Genero { get; set; }
 
-    [Required]
-    [Display(Name = "Telemóvel")]
-    [Phone]
-    public string Telemovel { get; set; }
+        [Required]
+        [Phone]
+        public string Telemovel { get; set; }
 
-    [Required]
-    [Display(Name = "Senha")]
-    [DataType(DataType.Password)]
-    public string Senha { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
 
-    [Required]
-    [Display(Name = "Idade")]
-    [Range(18, 120, ErrorMessage = "A idade deve ser entre 18 e 120 anos.")]
-    public int Idade { get; set; }
+        [Required]
+        public string Senha { get; set; }
+
+        [Required]
+        [Range(1, 120, ErrorMessage = "Idade must be between 1 and 120.")]
+        public int Idade { get; set; }
+    }
 }
